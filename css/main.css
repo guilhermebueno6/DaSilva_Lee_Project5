@@ -1,0 +1,180 @@
+.hidden{
+  display: none;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+.dropdownMenu{
+  display: none !important;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 100%;
+  height:200px;
+
+}
+.menuItems{
+  margin-left: -75px;
+  background-color: green;
+  height:100%;
+  width:100%;
+  border-bottom: 1px solid white;
+}
+.footerLogo{
+  background-color: darkgrey;
+  display: none;
+}
+
+.show-dropdown{
+  display: flex !important;
+}
+
+#headerButtons{
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+
+}
+
+.navItems{
+  width:100px;
+  height: 50px;
+  margin-left: 15px;
+  background-color: #6e6e6e;
+  display: none;
+}
+#mainHeader{
+  width: 100%;
+  height: 100px;
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+#navButton{
+  margin-left: 15px;
+  flex-shrink: 0;
+  margin-top:15px;
+  height: 60px;
+  width: 60px;
+  background-color: #efefef;
+  transition: all .2s;
+}
+
+
+#headerLogo{
+  margin-top: 15px;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #efefef;
+}
+#pageTitle{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #8a8a8a;
+  width: 450px;
+  height: 50px;
+}
+#upperContent{
+  flex-shrink: 1;
+}
+
+.Link{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  background-color: #6e6e6e;
+  width: 600px;
+  height: 700px;
+}
+
+.linkText{
+  background-color: #efefef;
+  width: 100%;
+  height: 60%;
+}
+
+#footerNav{
+  width: 80%;
+  height: 50px;
+  background-color: #6e6e6e;
+}
+
+#mainFooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #efefef;
+}
+
+@media screen and (min-width:1050px){
+  .navItems{
+
+    display: block;
+  }
+  #navButton{
+    display: none;
+  }
+  #mainHeader{
+
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 220px;
+  }
+  #headerLogo{
+    position: static;
+    margin-left: 40px;
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+
+  }
+  #headerButtons{
+
+    margin-right: 40px;
+    margin-top: 80px;
+  }
+  .Link{
+    margin-right: 30px;
+    width: 400px;
+  }
+
+  #upperContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #lowerContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #mainFooter{
+    flex-direction: row;
+    height: 230px;
+  }
+  #footerNav{
+    height: 30%;
+  }
+
+  .footerLogo{
+    margin-right: 40px;
+    display: block;
+    height: 200px;
+    width: 200px;
+  }
+
+
+}
